@@ -1,0 +1,20 @@
+.sidebar {
+    background-color: #9fd89f; /* Adjust this color as needed */
+    color: #ffffff; /* Text color for good contrast */
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+  }
+  
+  .sidebar a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .sidebar a:hover {
+    background-color: #7cbf7c; /* Slightly darker green on hover */
+    color: #ffffff;
+  }
+  

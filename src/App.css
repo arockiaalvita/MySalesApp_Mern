@@ -1,0 +1,171 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.rPlFkIewyeodZUZ3TKfnvQHaEo&pid=Api&P=0&h=220');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 900px; /* Adjusted to better fit the layout */
+  margin: auto; /* Centered the container */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: rgba(0, 86, 179, 0.9);
+  color: white;
+  padding: 15px;
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed sidebar */
+  top: 0; /* Ensure it starts at the top */
+  overflow-y: auto; /* Allows scrolling if content exceeds view */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #ffc107; /* Change color on hover for better visibility */
+}
+
+/* Main content */
+.home-container {
+  display: flex; /* Flexbox for side by side layout */
+}
+
+.main-content {
+  margin-left: 260px; /* Space for the sidebar */
+  padding: 20px;
+  width: calc(100% - 260px); /* Adjust width to account for the sidebar */
+}
+
+/* Header Styles */
+h2 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Styles */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  padding: 10px; /* Increased padding for comfort */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%; /* Use full width */
+  max-width: 300px; /* Optional: set a max-width */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0056b3; /* Highlight border on focus */
+}
+
+/* Button Styles */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0056b3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px; /* Set a specific width */
+  margin: 10px 0; /* Added margin for better spacing */
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #0056b3;
+  color: white;
+  padding: 12px;
+  text-align: left; /* Left-align for better readability */
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* Zebra striping for table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd; /* Highlight on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove sidebar space on smaller screens */
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+}
